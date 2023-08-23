@@ -1,7 +1,7 @@
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 from enum import unique
-from project.extensions import db , login_manager
+from application.extensions import db , login_manager
 import datetime
 
 

@@ -4,12 +4,12 @@ from flask import Flask, render_template, url_for, redirect, request, flash
 from flask_login import login_required, current_user, login_user, logout_user
 from sqlalchemy import func
 
-from project.extensions import db
+from application.extensions import db
 
-from project.routes.blogs import bp
+from application.routes.blogs import bp
 
-from project.models.user import UserModel
-from project.models.blog import BlogModel, CategoryMaster, BlogComment
+from application.models.user import UserModel
+from application.models.blog import BlogModel, CategoryMaster, BlogComment
 
 
 # Global variable

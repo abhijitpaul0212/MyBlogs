@@ -1,4 +1,4 @@
-from project.extensions import db
+from application.extensions import db
 from enum import unique
 
 class BlogModel(db.Model):

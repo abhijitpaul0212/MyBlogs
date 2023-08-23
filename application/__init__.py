@@ -3,13 +3,13 @@ from dotenv import load_dotenv
 from flask import Flask
 from config import DevelopmentConfig
 
-from project.routes.main import bp as main_bp
-from project.routes.users import bp as users_bp
-from project.routes.blogs import bp as blogs_bp
-from project.extensions import db, login_manager, mail
-from project.models.blog import CategoryMaster
+from application.routes.main import bp as main_bp
+from application.routes.users import bp as users_bp
+from application.routes.blogs import bp as blogs_bp
+from application.extensions import db, login_manager, mail
+from application.models.blog import CategoryMaster
 
-from project.routes.blogs.routes import get_all_categories
+from application.routes.blogs.routes import get_all_categories
 
 from flask import Flask, render_template, url_for, redirect, request, flash
 from flask_login import login_required, current_user, login_user, logout_user
